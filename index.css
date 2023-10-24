@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+.game {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C134F;
+    flex-direction: column;
+}
+.level h1 {
+    color: #F5F0BB;
+    font-size: 5em;
+}
+.level {
+    flex: 1;
+}
+.boxes {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3em;
+}
+.green,.red,.yellow,.blue {
+    height: 10em;
+    width: 10em;
+    border-radius: 20px;
+    border-color: black;
+    border: 5px solid black;
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: blue;
+}
+.green,.red,.yellow,.blue:hover {
+    cursor: pointer;
+}
+.opacity {
+    opacity: 0.5;
+}
+.white {
+    background-color: white;
+    border-color: whitesmoke;
+}
+.wrong {
+    background-color: red;
+}
